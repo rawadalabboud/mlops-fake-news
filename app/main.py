@@ -6,7 +6,7 @@ import joblib
 
 # Initialize app and template engine
 app = FastAPI()
-templates = Jinja2Templates(directory="app/templates")
+templates = Jinja2Templates(directory="templates")
 
 # Load model and vectorizer
 try:
