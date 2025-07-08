@@ -4,3 +4,5 @@ scikit-learn==1.6.1
 pandas
 joblib
 jinja2
+pytest
+httpx
