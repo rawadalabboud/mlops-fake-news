@@ -12,7 +12,7 @@ Built with:
 
 ## 🚀 Live Demo
 
-👉 [Access the API on Render](https://your-app-name.onrender.com/docs)
+👉 [Access the API on Render](https://mlops-fake-news.onrender.com/docs)
 
 Use the `/predict` endpoint with a POST request like:
 
