@@ -12,7 +12,7 @@ Built with:
 
 ## 🚀 Live Demo
 
-👉 [Access the API on Render](https://mlops-fake-news.onrender.com/docs)
+👉 [Access the API on Render](https://mlops-fake-news.onrender.com)
 
 Use the `/predict` endpoint with a POST request like:
 
@@ -21,8 +21,8 @@ Use the `/predict` endpoint with a POST request like:
   "text": "NASA just launched a new mission to study exoplanets."
 }
 
-
-🧰 Project Structure
+## 🧰 Project Structure
+```plaintext
 mlops-fake-news/
 ├── app/
 │   └── main.py          # FastAPI app
@@ -39,35 +39,30 @@ mlops-fake-news/
 ├── render.yaml          # Render deployment config
 └── README.md            # You're here!
 
-🏗️ How to Run Locally
+## 🏗️ How to Run Locally
 
-1. Clone the repo
-git clone https://github.com/rawadalabboud/mlops-fake-news.git
+Clone the repo
+git clone https://github.com/rawadalabboud/mlops-fake-news.git  
 cd mlops-fake-news
-2. Set up virtual environment
-python3 -m venv .venv
-source .venv/bin/activate
+Set up virtual environment
+python3 -m venv .venv  
+source .venv/bin/activate  
 pip install -r requirements.txt
-3. Train the model
+Train the model
 python train.py
-4. Run the API
+Run the API
 uvicorn app.main:app --reload
 Visit: http://localhost:8000/docs
 
-🐳 Run with Docker
+## 🐳 Run with Docker
 
-docker build -t fake-news-api .
+docker build -t fake-news-api .  
 docker run -p 8000:8000 fake-news-api
-📦 Deploy to Render
+
+## 📦 Deploy to Render
 
 Just connect your repo to Render, and it will automatically deploy using render.yaml.
 
-📌 Todo / Future Ideas
-
-✅ Add tests for /predict
-🧠 Try better models (e.g., BERT)
-💻 Add a simple frontend with HTML or Gradio
-🧪 Add CI/CD with GitHub Actions
-👤 Author
+## 👤 Author
 
 Rawad Al Abboud — rawadalabboud
