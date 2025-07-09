@@ -20,6 +20,7 @@ Use the `/predict` endpoint with a POST request like:
 {
   "text": "NASA just launched a new mission to study exoplanets."
 }
+```
 
 ## 🧰 Project Structure
 ```plaintext
@@ -38,9 +39,10 @@ mlops-fake-news/
 ├── .dockerignore        # Clean up Docker context
 ├── render.yaml          # Render deployment config
 └── README.md            # You're here!
+```
 
 ## 🏗️ How to Run Locally
-
+```plaintext
 Clone the repo
 git clone https://github.com/rawadalabboud/mlops-fake-news.git  
 cd mlops-fake-news
@@ -53,16 +55,20 @@ python train.py
 Run the API
 uvicorn app.main:app --reload
 Visit: http://localhost:8000/docs
+```
 
 ## 🐳 Run with Docker
-
+```plaintext
 docker build -t fake-news-api .  
 docker run -p 8000:8000 fake-news-api
+```
 
 ## 📦 Deploy to Render
-
+```plaintext
 Just connect your repo to Render, and it will automatically deploy using render.yaml.
+```
 
 ## 👤 Author
-
+```plaintext
 Rawad Al Abboud — rawadalabboud
+```
